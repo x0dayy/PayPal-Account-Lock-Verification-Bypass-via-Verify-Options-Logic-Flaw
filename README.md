@@ -1,6 +1,8 @@
 <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Warning.png" alt="Warning" width="40" height="40" /> PayPal ATO via Verification Workflow Manipulation
 
-CVE-PENDING | ZERO-DAY | UNPATCHED
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Page%20with%20Curl.png" alt="Page with Curl" width="32" height="32" /> **CVE-PENDING** | 
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Flexed%20Biceps.png" alt="Flexed Biceps" width="32" height="32" /> **ZERO-DAY** | 
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Handshake.png" alt="Handshake" width="32" height="32" /> **UNPATCHED**
 
 A critical logic flaw in PayPal's account recovery "Verify Options" page allows an attacker to manipulate the verification process. By exploiting inconsistent state handling, an attacker with access to a single verification method (e.g., email) can systematically remove other obstacles (e.g., SMS) to achieve a full Account Takeover (ATO).
 
@@ -10,7 +12,7 @@ A critical logic flaw in PayPal's account recovery "Verify Options" page allows 
 
 The vulnerability is a Broken Authentication flaw caused by Improper State and Access Control in the multi-step verification process. The system fails to maintain a secure, immutable context of the verification intent once initiated.
 
-The core failure is that the https://www.paypal.com/webapps/accountrecovery/verify_options endpoint allows users to:
+The core failure is that the https://www.paypal.com/authflow/password-recovery/ endpoint allows users to:
 
     Re-trigger the sending of codes to any method an arbitrary number of times.
 
