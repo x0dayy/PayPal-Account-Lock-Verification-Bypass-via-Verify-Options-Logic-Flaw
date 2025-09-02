@@ -22,7 +22,7 @@ The core failure is that the https://www.paypal.com/authflow/password-recovery/ 
 
 This creates a race condition where an attacker can "spam" verification methods they don't control to invalidate or remove them from the workflow, forcing the system to rely on the method they possess.
 
-#PoC : https://streamable.com/d759xu
+#PoC : 
 
 It Sometimes Gives Full Access And Sometimes It Just Fully Lock Down The Account For The User And Make It A Lot Of Hussle To Unlock It Again For The Victim. So For Red Teamer's Its Win Win.
 
